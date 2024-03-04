@@ -7,7 +7,7 @@ In order to find a path, we need to know what moves we can make from a certain c
 We obviously can't solve the problem without knowing the position of RT, so we must find a way to do that without knowing the current time. The fact that the columns are cyclic allows us to do just that. Because of it, we don't actually need to know the coordinates of RT - just its position ralative to the rocks, so we can keep track of its position in the array $a$, moving it one cell downwards on every unit of time instead of moving the rocks upwards.
 
 This means that the operations will change, too:
- - When moving upwards, it will stay on the same cell (as the rocks will also move one cell upwands).
+ - When moving upwards, it will stay on the same cell (as the rocks will also move one cell upwards).
  - When moving downwards, it will move two cells cyclically downwards, i.e. from $(i,j)$ to $((i+2) \bmod n,j)$.
  - When moving to the right, it will move one cell to the right and one cell cyclically downwards, i.e. from $(i,j)$ to $((i+1) \bmod n,j+1)$.
 
