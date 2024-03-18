@@ -2,7 +2,7 @@
 You can view the problem statement and submit [here](https://codeforces.com/contest/1933/problem/G)
 
 ### Step 1
-Let's start by trying different ways to place the cookies on a 3x3 grid. To do that, we will try different combinations of shapes on the top left 2x2 grid ans filling the rest based on the statement's restrictions (since there can't be three consecutive cells that contain the same shape of cookies, if we have two cookies of the same shape in a row, column or diagonal theremust be a cookie of the other shape in the 3<sup>rd</sup> one).
+Let's start by trying different ways to place the cookies on a 3x3 grid. To do that, we will try different combinations of shapes on the top left 2x2 grid and filling the rest based on the statement's restrictions (since there can't be three consecutive cells that contain the same shape of cookies, if we have two cookies of the same shape in a row, column or diagonal there must be a cookie of the other shape in the 3<sup>rd</sup> one).
 
 First of all, we notice that we can't place three cookies of the same shape in a way that they form an L shape in the corner (no matter what shape the other cookie of the 2x2 grid is):
 ![](https://github.com/mariza-cy/Editorials/blob/main/Codeforces/1933%20-%20Codeforces%20Round%20929%20(Div.%203)/Corner.gif)
